@@ -27,6 +27,9 @@ Using Python3 to do the exercise
 
   > A generator in Python is similar to a function except instead of returning a value and exiting a process, a generator will pause the process, saving its state for next time. The biggest difference between a function and generator from a code perspective is one word: `return` is changed to `yield`.
 
+
+<!-- more -->
+
 * Classes
 
   * `self` a very important concept:star: which is used to reference a class instance's own variables and functions from within the class definition
