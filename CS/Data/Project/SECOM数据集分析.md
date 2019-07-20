@@ -101,8 +101,6 @@ date: 2019-04-26 20:55:00
 
 我们选择的是过采样方法，SMOTE （Synthetic Minority Oversampling Technique），这种方法会根据插值来产生新的数据
 
-
-
 ## 4. 使用不同模型进行预测
 
 ### 4.1 可用的算法
@@ -157,15 +155,15 @@ date: 2019-04-26 20:55:00
 
 从准确度角度看，不进行采样直接使用各种算法的预测结果如下
 
-![normal-accu](  normal-accu.svg)
+![normal-accu](SECOM数据集分析/normal-accu.svg)
 
 看上去效果还可以，但是仔细思考的话，就会发现这样的准确率是没有什么意义的，因为正样本太多，所以哪怕算法将所有的样本都判断为正样本，最后也能得到非常高的预测准确度。
 
 这一点我们可以从观察算法的混淆矩阵看出来，下面展示的两张混淆矩阵代表了大部分算法的混淆矩阵情况
 
-![1556256350205](  1556256350205.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix5.png)
 
-![1556256364752](  1556256364752.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix6.png)
 
 可以看到正如我们之前所猜测的那样，模型的预测效果很差，将大部分样本呢都标定为正样本
 
@@ -177,15 +175,15 @@ date: 2019-04-26 20:55:00
 
 这样的情况下，再使用7种算法进行预测得到的结果如下
 
-![under-accu](  under-accu.svg)
+![under-accu](SECOM数据集分析/under-accu.svg)
 
 可以看到，在欠采样的情况下，各个算法的预测准确度大大降低，几乎都只有一半左右，考虑到这是一个二分类问题，接近50%的预测准确度就相当于乱猜了。
 
 混淆矩阵如下
 
-![1556256787690](  1556256787690.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix1.png)
 
-![1556256792627](  1556256792627.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix2.png)
 
 从混淆矩阵可以看出，各个情况下的数据都差不多，也证实了我们的猜想，算法在欠采样的情况下没有了基本的判断能力，判断结果和随机类似。
 
@@ -199,15 +197,15 @@ date: 2019-04-26 20:55:00
 
 预测效果如下：
 
-![over-accu](  over-accu.svg)
+![over-accu](SECOM数据集分析/over-accu.svg)
 
 可以看到，在过采样的情况下，一部分算法的效果大大提升，而另一些算法仍然保持着较低的预测结果
 
 从混淆矩阵来看，取得较好预测结果的算法混淆矩阵大概如下
 
-![1556257306182](  1556257306182.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix4.png)
 
-![1556257316182](  1556257316182.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/fusematrix3.png)
 
 可以看到效果还是非常不错的，能够将大部分的正负样本预测出来。
 
@@ -220,19 +218,19 @@ date: 2019-04-26 20:55:00
 
 首先观察一下各个算法在不同的采样情况下能否正确地将故障从故障中找到
 
-![fail-rate-all](  fail-rate-all.svg)
+![fail-rate-all](SECOM数据集分析/fail-rate-all.svg)
 
 可以看到，这时过采样的效果很好
 
 再来观察一下各个算法在不同的采样情况下能否正确地将正常样本识别出来
 
-![pass-rate-all](  pass-rate-all-1556260861775.svg)
+![pass-rate-all-1556260861775](SECOM数据集分析/pass-rate-all-1556260861775.svg)
 
 可以看到，在这种情况下过采样和不采样的效果是较好的。
 
 那么如何将两种判断标准结合起来呢？我们最终使用的判断标准是将上述两个标准的数值取调和平均，得到的结果如下：
 
-![final-rate-all](  final-rate-all.svg)
+![final-rate-all](SECOM数据集分析/final-rate-all.svg)
 
 可以看到，在过采样情况下，随机森林和XGBoost这两种算法的效果是最好的，其他的几种情况和算法都不尽如人意。
 

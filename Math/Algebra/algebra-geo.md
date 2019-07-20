@@ -56,7 +56,7 @@ $$
 
 先介绍**矩阵向量乘积**：把向量**放倒**，$1\times2$的矩阵就是一个降维的投影，降维成一条直线，在这条直线上取一个单位向量$\hat{u}$
 
-![1562517602554](algebra-geo/1562517602554.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/algebra-geo1.png)
 
 基底$\hat{i}$的变换等于到$\hat{u}$的投影，根据对称性，恰好等于$\hat{u}$到$\hat{i}$的投影，也就是$u_x$，同理对另一个基底也是一样的，因此，变换后的$\hat{i}，\hat{i}$的位置就是$\left[\begin{array}{ll}{u_{x}} & {u_{y}}\end{array}\right]$
 

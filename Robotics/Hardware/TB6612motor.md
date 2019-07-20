@@ -19,7 +19,7 @@ date: 2019-7-6 15:53:00
 
 减速器是一种相对精密的机械零件，使用它的目的是降低转速，增加转矩
 
-![1563264045293](TB6612motor/1563264045293.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/motor.png)
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ date: 2019-7-6 15:53:00
 
 ### 编码器的原理（光电、霍尔）
 
-![1563264656436](TB6612motor/1563264656436.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/encoder.png)
 
 目的：获取AB相输出的方波信号
 

@@ -68,17 +68,17 @@ iris数据集中共有3个种类的花，每种花各有50个*样本*：
 
 首先通过读取iris.data可以得到这样的信息
 
-![1556113042425](1556113042425.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/knn-info.png)
 
 通过统计可以发现petal-length的标准差最大，猜测可能含有最多信息
 
-![1556113160309](1556113160309.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/knn-info2.png)
 
 为了验证算法的效果，我们将数据分成训练集和测试集，比例为4:1
 
 之后为了排除数据大小的干扰，再将数据标准化
 
-![pairplot](pairplot.svg)
+![pairplot](KNN/pairplot.svg)
 
 通过可视化可以看出在二维平面上也能大概分出3种花
 
@@ -116,13 +116,13 @@ K近邻分类器是一个基于样本的分类器，也就是说它并不会训�
 
 大部分情况下预测精度随K值的变化规律是这样的
 
-![accuracy2]( accuracy2.svg)
+![accuracy2](KNN/accuracy2.svg)
 
 也就是说随着K值的增大，预测精度是不断降低的。
 
 但是在测试过程中也出现过以下情况的变化规律
 
-![accuracy1]( accuracy1-1556177038111.svg)
+![accuracy1-1556177038111](KNN/accuracy1-1556177038111.svg)
 
 这种情况比较反常，也即是K稍大时预测结果较好，K偏小或偏大时效果都不佳。
 
@@ -142,11 +142,11 @@ K近邻分类器是一个基于样本的分类器，也就是说它并不会训�
 
 从图像上看，K控制的是分割平面的边界。比如说当K较小时，这个区间就会较小，直观上理解就是K仅仅观察临近的几个样本，而没有全局意识，哪怕它的旁边有一个异常点，它也把异常当成同类
 
-![1556180949556]( 1556180949556.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/knn-map1.png)
 
 另一方面，当K较大时，预测值更加关注的是全局的情况，所以这时它就会忽略一些异常值，这使得边界更加平滑
 
-![1556181089975]( 1556181089975.png)
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/knn-map2.png)
 
 ### 4.3 KNN算法的优缺点
 
