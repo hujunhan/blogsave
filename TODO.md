@@ -2,6 +2,7 @@
 title: TODO
 author: Junhan Hu
 mathjax: true
+layout: false
 tags:
   - hide
 categories: []

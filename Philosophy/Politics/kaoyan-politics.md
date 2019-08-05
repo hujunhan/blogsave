@@ -1,6 +1,7 @@
 ---
 title: 考研政治综述
 author: Junhan Hu
+layout: false
 tags:
   - Philosophy
   - Politics
@@ -26,8 +27,14 @@ date: 2019-08-01 20:13:00
   是关于无产阶级和人类解放的科学
 
   * 唯物论、辩证法：世界的物质性及发展规律
+
   * 认识论
+
   * 唯物史观
+
+  * understand philosophy
+
+    <!-- more -->
 
 * 马克思主义政治经济学（主要讲资本主义）
 
