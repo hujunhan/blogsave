@@ -53,7 +53,8 @@ cd blog
 npm i hexo-renderer-pandoc --save
 
 ## 3.4 安装一些其他的包
-npm i hexo-auto-category hexo-blog-encrypt hexo-deployer-git  hexo-generator-searchdb  --save
+npm uninstall hexo-generator-index --save
+npm i hexo-generator-index2 hexo-auto-category hexo-blog-encrypt hexo-deployer-git  hexo-generator-searchdb  --save
 
 ## 3.5 建立分类、tag页面
 hexo new page categories

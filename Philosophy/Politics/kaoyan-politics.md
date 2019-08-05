@@ -2,14 +2,12 @@
 title: 考研政治综述
 author: Junhan Hu
 tags:
-  - Philosophy
-  - Politics
+  - hide
 mathjax: true
 categories:
   - Philosophy
   - Politics
 date: 2019-08-01 20:13:00
-layout: false 
 ---
 
 ## 总览
