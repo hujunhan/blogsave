@@ -58,3 +58,13 @@ date: 2019-08-09 16:58:00
 2. Large Leap
 3. Harmony
 4. Chord Progression
+
+## Rhythm Melody Harmony
+
+### Rhythm
+
+节奏出现在音乐中，也出现在生活中（比如心跳）
+
+流行乐往往有很强的beat，经典音乐也有beat，但往往是被压抑的，不明显的
+
+beat，也就是节拍，在被我们听到时往往是是被大脑分成一部分一部分的，比如2，3，4个节拍算1组
