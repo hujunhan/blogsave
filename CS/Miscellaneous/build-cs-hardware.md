@@ -212,6 +212,11 @@ ALU接受两个输入和一个函数$f$，输出值
 
 ## 3 Memory
 
+> Cache memory: RAM is very expensive, so there are trade-offs in the situation
+>
+> * Use large and cheap RAM with low quality
+> * Use small and expensive RAM with good quality
+
 从这一部分开始，会涉及到时间，其中会有一些问题包括
 
 * 重复使用相同的硬件
@@ -296,3 +301,62 @@ DFF和1Bit的区别：DFF是瞬时的，而1Bit的状态可以延续
 * PC
 
   * 好几个MUX选择
+
+## 4 Machine Language
+
+### Overview
+
+How is it possible that  we can do all different things with a single hardware
+
+* theory from Turing: one machine can simulate all other machine
+* practice from Von Neumann: architect
+
+3 Most important elements for every ML:
+
+1. **Operation**s: what to do with this instruction
+2. **Program Counter**: what to do next
+3. **Addresing**: what to operate (where the data is)
+
+> e.g. assembly language
+>
+> a instruction 010001000110010
+>
+> in fact it can be view as 3 part: `0100010` `0011` `0010` ADD R3 R2
+
+### Elements
+
+Machine language is the interface beteween hardware and software
+
+#### Operations
+
+* Arithmetic: add, subtract
+* Logical: and, or
+* Flow control: goto, if
+
+**Differences** between machine languages:
+
+* richness of the set of operations
+* data types
+
+#### Addressing
+
+Accessing a memory location is expensive
+
+Solution: Memory Hierarchy
+
+![](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/n2t-mem-hier.png)
+
+* **Registers’ number and functions are a center part of the machine language**
+
+这部分基本都是微机原理所涉及的内容
+
+### Hack Computer
+
+课程所要设计的电脑
+
+* 硬件部分
+  * 16位计算机，意味着RAM里有一堆寄存器，每个寄存器都是16位的，CPU也都能处理16位的数据指令
+  * 由3部分组成，ROM\CPU\RAM
+* 软件部分
+  * 16位的指令。A instruction and D instruction
+
