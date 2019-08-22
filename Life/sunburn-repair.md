@@ -1,6 +1,8 @@
 ---
 title: 皮肤变黑与变白
 author: Junhan Hu
+tags: 
+  - skill
 mathjax: true
 categories:
   - Life
