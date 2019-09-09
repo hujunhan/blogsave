@@ -3,7 +3,7 @@ title: Control Theory and Application in CS
 author: Hu Junhan
 tags:
   - control
-published: true
+mathjax: true
 categories:
   - Control
 date: 2019-09-08 15:23:00
