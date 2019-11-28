@@ -1,3 +1,15 @@
+```
+title: Introduction to Linguist
+author: Junhan Hu
+tags:
+  - Philosophy
+  - Linguist
+mathjax: false
+categories:
+  - Philosophy
+date: 2019-11-16 21:18:00
+```
+
 ## Introduction
 
 5 Topics:
