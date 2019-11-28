@@ -71,3 +71,12 @@ cat /home/coding/.ssh/id_rsa.pub  #读取密钥
 #到Github中设置
 ```
 
+## Custom Domain
+
+Prerequisite: A custom domain
+
+设置步骤:
+
+1. 在域名购买商处设置一条解析规则, 记录设置为CNAME(用于github.io)或者A(用于IPv4地址)
+2. 在github的项目处设置Custom Domain, 这会在项目根目录下新建一个CNAME文件, 文件内容就是想要的Custom Domain.
+3. 因为每次Hexo deploy之后CNAME文件都会被删除, 所以需要在Hexo项目中加入CNAME文件来解决这个问题. 在blog/source/目录下新建CNAME文件, 文件内容是想要的Custom Domain.

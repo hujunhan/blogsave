@@ -1,4 +1,4 @@
-```
+---
 title: Introduction to Linguist
 author: Junhan Hu
 tags:
@@ -8,7 +8,7 @@ mathjax: false
 categories:
   - Philosophy
 date: 2019-11-16 21:18:00
-```
+---
 
 ## Introduction
 
