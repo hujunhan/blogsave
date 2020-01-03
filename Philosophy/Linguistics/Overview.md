@@ -20,9 +20,13 @@ date: 2019-11-16 21:18:00
   * create a syntax tree
 * Semantics: the meaning of language
 * Morphology: the structure of words
+  
   * Birds, Pets, the difference between *s*
+  
+    <!-- more -->
 * Phonetics: peoperties of sounds 
 * Phonogy: patterns of sounds
+  
   * pay/bay/ebay, bay sounds like pay
 
 ## Syntax 1

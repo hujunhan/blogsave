@@ -25,6 +25,8 @@ What can we do? Marr and Poggio stated that there are 3 layers of analysis
 
 What DeepMind do is focusing the top 2 level of the analysis
 
+<!-- more -->
+
 ## Some History
 
 ### Deep Learning
