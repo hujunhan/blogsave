@@ -11,7 +11,7 @@ date: 2019-08-22 20:14:00
 
 ## 标准指法
 
-[typingclub](https://www.typingclub.com)练习标准指法的网站，网站做的很好看，界面互动很优秀
+[typingclub](https://www.typingclub.com)练习标准指法的网站，网站做的很好看，界面互动很优秀.
 
 键盘上的`F`,`J`上面有一个横杠，这两个是用来定位的，将两只手的食指放在那两个键位上
 
