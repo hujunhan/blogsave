@@ -25,7 +25,7 @@ sudo apt-get install -y nodejs
 npm -v
 
 # 2.安装Hexo-cli
-npm install hexo-cli@2.0.0 -g
+npm install hexo-cli -g
 hexo -v
 
 # 3.建站
@@ -41,7 +41,7 @@ git clone https://github.com/hujunhan/blogsave.git source/_posts/.
 hexo server
 
 ## 3.2 添加主题Next
-git clone --branch v7.1.0 https://github.com/theme-next/hexo-theme-next themes/next
+git clone https://github.com/theme-next/hexo-theme-next themes/next
 
 ## 3.3 安装数学公式渲染器
 npm un hexo-renderer-marked --save
@@ -70,6 +70,10 @@ ssh-keygen #生成密钥
 cat /home/coding/.ssh/id_rsa.pub  #读取密钥
 #到Github中设置
 ```
+
+## Deploy
+
+
 
 ## Custom Domain
 
