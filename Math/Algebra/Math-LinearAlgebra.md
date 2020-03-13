@@ -9,6 +9,46 @@ categories:
 date: 2019-1-8 14:58:00
 ---
 
+## The Big Picture
+
+taught in [MIT](https://www.youtube.com/watch?v=ggWYkes-n6E)
+
+### Row Space = $C(A^T)$
+
+linear combination, fill the plane
+$$
+A=\left[\begin{array}{lll}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{array}\right]
+$$
+Only 2 rows, so can’t fill the 3D, here we introduce null space
+
+### **Null Space** = $N(A)$
+
+$$
+A v=\left[\begin{array}{l}
+0 \\
+0
+\end{array}\right]
+$$
+
+In this situation
+$$
+ v=\left[\begin{array}{l}
+1 \\
+-2 \\
+1
+\end{array}\right]
+$$
+is the null vector, prependicular line
+
+### **Column Space** = $C(A)$
+
+The column space the whole space 
+
+### Left Space =$N(A^T)$
+
 ## Vectors
 
 $$
