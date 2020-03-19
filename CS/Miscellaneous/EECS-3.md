@@ -1,5 +1,5 @@
 ---
- title: MIT EECS 导论课 3
+title: MIT EECS 导论课 3
 author: Junhan Hu
 tags: [cs]
 mathjax: true
