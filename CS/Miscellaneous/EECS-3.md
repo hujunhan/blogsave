@@ -56,7 +56,7 @@ LTI, 前馈, 反馈之类的
   > \frac{1}{1-\operatorname{re}^{j \Omega} R }=1+ r e^{j \Omega} R +r^{2} e^{j 2 \Omega} R ^{2}+\cdots
   > $$
   > 
-  > ![image-20200319020038344](EECS-3/image-20200319020038344.png)
+  > <img src="https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175342.png" alt="image-20200319020038344" style="zoom: 80%;" />
   >
   > 因为现实生活中的模型都是**实参数**的, 因此**复根都是共轭**的, 所以分母乘起来复数就消失了
 
@@ -79,7 +79,7 @@ $$
 $$
 可以看出,$\Omega$和$r$影响了系统的响应
 
-![image-20200319021647812](EECS-3/image-20200319021647812.png)
+![image-20200319021647812](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175422.png)
 
 其中$r$代表了红色和绿色的线, 也就是收敛的速度,
 

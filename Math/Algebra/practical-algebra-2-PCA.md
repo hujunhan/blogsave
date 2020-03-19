@@ -15,7 +15,7 @@ We often deal with high-dimentional data sets. Using PCA is handy for eliminatin
 
 ## Application: Background Removal
 
-![img](practical-algebra-PCA/Wed, 11 Mar 2020 224029.png)
+<img src="https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175701.png" alt="img" style="zoom:150%;" />
 
 There is a video, we want to remove the background
 
@@ -25,7 +25,7 @@ We can scale the image to $60\times 80$, and stack the image to a tall column $1
 
 If the video contains $11300$ images, then the video can be represented as a $11300\times 4800$ matrix
 
-![img](practical-algebra-PCA/Wed, 11 Mar 2020 224700.png)
+![img](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175717.png)
 
 ## First Attempt: SVD
 
@@ -43,9 +43,9 @@ plt.imshow(low_rank, cmap='gray')
 plt.imshow(np.reshape(low_rank[:,140], dims), cmap='gray');#get one image from the video
 ```
 
-![img](practical-algebra-PCA/Wed, 11 Mar 2020 225222.png)
+![img](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175724.png)
 
-![img](practical-algebra-PCA/Wed, 11 Mar 2020 225228.png)
+<img src="https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175731.png" alt="img" style="zoom:150%;" />
 
 Great, we got a good result
 

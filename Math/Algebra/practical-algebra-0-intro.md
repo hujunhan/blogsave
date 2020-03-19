@@ -42,11 +42,11 @@ mainly 2 type of computation
 
     * **convolution**
 
-      ![image-20200309154943071](practical-algebra/image-20200309154943071.png)
+      ![image-20200309154943071](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175825.png)
 
       in matrix multiplication viewpoint
 
-      ![image-20200309155010166](practical-algebra/image-20200309155010166.png)
+      ![image-20200309155010166](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175832.png)
 
 * Matrix decompositions
 
@@ -63,7 +63,7 @@ Why accuracy is a problem?
 
 Floats and doubles are **not equidistant**
 
-![image-20200309160331880](practical-algebra/image-20200309160331880.png)
+![image-20200309160331880](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200319175839.png)
 
 Machine Epsilon: Half the distance between 1 and the next larger number 
 
