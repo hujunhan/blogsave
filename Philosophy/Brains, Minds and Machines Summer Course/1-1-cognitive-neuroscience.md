@@ -1,5 +1,5 @@
 ---
-title: Functional architecture of the human brain
+title: Human Cognitive Neuroscience by Nancy Kanwisher
 author: Junhan Hu
 tags: [tips,cs]
 mathjax: true
@@ -22,6 +22,8 @@ date: 2020-03-22 16:20:00
 * 通用: 可以处理多种功能
 
 我们为什么要关注大脑的这些功能组件呢? 因为这是关于大脑和智能的基本问题, 这是一种处理复杂问题的途径(bottom-up), 了解不同组件可以帮助我们理解\实现其数学模型
+
+<!-- more -->
 
 ###  History
 
@@ -56,4 +58,11 @@ Important problem:
 * 映射关系, 大脑的区域X和特定的功能Y之间是怎么样的映射, many X for Y? X for how many Y?
 * 充分性\必要性
 * 天生的?
+
+语音实验：实验表明有一块区域只是对**音素**相应，而非**语言**
+
+* 一块特定区域只做和语音相关的功能，比如听语句。当做其他事（不需要语言）时活跃度就很小
+* Language$\not=$Thought 
+* 有很多区域我们还不了解
+* 有一些区域是通用的（IQ/General），在做困难的工作时这些区域就会被激活（John Duncan）
 
