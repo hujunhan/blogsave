@@ -7,7 +7,6 @@ mathjax: true
 date: 2020-2-21 
 categories:
   - Robotics
-
 ---
 
 ## 1 About Robotics 

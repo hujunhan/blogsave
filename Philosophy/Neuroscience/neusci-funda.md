@@ -16,6 +16,8 @@ Goal: properly **synchronize** events in the EEG experiments and **validate** th
 
 Why? verify that the timing of all data points is known with sufficient precision.  Some key points such as the playing of a sound, the display of an image.
 
+<!-- more -->
+
 Error
 
 * constant offset

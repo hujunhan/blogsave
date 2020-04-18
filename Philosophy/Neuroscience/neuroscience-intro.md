@@ -26,6 +26,9 @@ date: 2020-03-22 17:00:00
 
     Why it works: nice properties that neurons in the **same orientation**
 
+
+<!-- more -->
+
 * Visual system
 
   ![image-20200322164400363](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200328184603.png)

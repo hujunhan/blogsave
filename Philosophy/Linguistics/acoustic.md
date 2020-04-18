@@ -16,6 +16,8 @@ Sound is a pressure wave, pressure fluctuations move through space,but each air 
 
 <img src="https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/ling-soundwaves.png" style="zoom:50%;" />
 
+> While using a microphone to capture sounds, the physics behind it is  **AIR PRESSURE**, so the waveform files (.wav/.mp3…)  will have negative and positive value!
+
 ## Spectrums
 
 The spectrums of a sound plays a center role in determining its **quality**
