@@ -1,5 +1,4 @@
 ---
-
 title: Basic Control Theory
 author: Junhan Hu
 tags:

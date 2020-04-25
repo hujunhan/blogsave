@@ -1,5 +1,4 @@
 ---
-
 title: Mobile Robots
 author: Junhan Hu
 tags:
