@@ -40,7 +40,7 @@ Input: 一个**表达式**, 长得像$(\lambda x.xy)(ab)$
 * 括号$(\ )$, 用来表示其中的表达式是一起的
 * $\lambda$, 用它和$.$ 我们用来表示一个**函数**, 表示函数的开始. 也成为**head**
 
-![image-20200503160104175](upload/image-20200503160104175.png)
+![image-20200503160104175](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508011805.png)
 
 ### 剪切和粘贴
 
@@ -50,7 +50,7 @@ Input: 一个**表达式**, 长得像$(\lambda x.xy)(ab)$
 
 所以说函数就是告诉我们要在哪里替换变量
 
-![image-20200503161012145](upload/image-20200503161012145.png)
+![image-20200503161012145](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508011811.png)
 
 ## 3 例子:数字
 

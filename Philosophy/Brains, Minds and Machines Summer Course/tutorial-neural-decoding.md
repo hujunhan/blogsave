@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Decoding to Understand Neural
+title: Tutorial:Decoding to Understand Neural
 author: Junhan Hu
 tags: [tips,cs]
 mathjax: true

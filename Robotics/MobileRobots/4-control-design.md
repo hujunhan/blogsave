@@ -64,7 +64,7 @@ $$
 >
 > Segway robots is simply unicycle+Inverted Pendulum+…
 >
-> ![image-20200427204338632](upload/image-20200427204338632.png)
+> ![image-20200427204338632](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508011707.png)
 >
 > Model the system
 > $$
