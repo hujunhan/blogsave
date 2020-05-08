@@ -11,7 +11,7 @@ date: 2019-1-16 13:47:00
 
 ## 1 Introduction
 
-### 1.1 What is a Decision Tree?
+### 1.1 What is a Decision Tree
 
 A tree shaped  supervised learning algorithm
 
@@ -21,20 +21,20 @@ A tree shaped  supervised learning algorithm
 
 Problem setting:
 
-* Set of possible instances $X$ 
-  * each instance $x$ in $X$  is a feature vector $x = < x _ { 1 } , x _ { 2 } \ldots x _ { n } >$ 
-* Unknown target function $f : X \rightarrow Y$ 
-* Set of function hypotheses $H = \{ h | h : X \rightarrow Y \}$ 
+* Set of possible instances $X$
+  * each instance $x$ in $X$  is a feature vector $x = < x _{ 1 } , x_ { 2 } \ldots x _ { n } >$
+* Unknown target function $f : X \rightarrow Y$
+* Set of function hypotheses $H = \{ h | h : X \rightarrow Y \}$
 
 Input:
 
-* Training examples $\left\{ < x ^ { ( i ) } , y ^ { ( i ) } > \right\}$ 
+* Training examples $\left\{ < x ^ { ( i ) } , y ^ { ( i ) } > \right\}$
 
 Output:
 
 * Hypothesis $h \in H$ that best approximates target function $f$
 
-### 1.2 How it works?
+### 1.2 How it works
 
 The tree divide the data into many categories make biggest **entropy**. That means the tree will try to get the **maximum information gain** from the dataset.
 
@@ -48,34 +48,32 @@ There are multiple methods can be used：
 
    * Based on  entropy and information theory.
 
-   * Used by *ID3* *C4.*5 *C5.0* 
+   * Used by *ID3* *C4.*5 *C5.0*
 
-   * Entropy $\mathrm { H } ( T ) = \mathrm { I } _ { E } \left( p _ { 1 } , p _ { 2 } , \ldots , p _ { J } \right) = - \sum _ { i = 1 } ^ { J } p _ { i } \log _ { 2 } p _ { i }$ 
+   * Entropy $\mathrm { H } ( T ) = \mathrm { I } _{ E } \left( p_ { 1 } , p _{ 2 } , \ldots , p_ { J } \right) = - \sum _{ i = 1 } ^ { J } p_ { i } \log _{ 2 } p_ { i }$
 
      Note: $\sum p_i=1$ which means if $p_i=p_j$ ,$H(T)$ is biggest $1 $ (equal probablity, most chaos)
 
    * Information Gain
      $$
      I G ( T , a ) = H ( T ) -  \mathrm { H } ( T | a )\\
-     =- \sum _ { i = 1 } ^ { J } p _ { i } \log _ { 2 } p _ { i } - \sum _ { a } p ( a ) \sum _ { i = 1 } ^ { J } - \operatorname { Pr } ( i | a ) \log _ { 2 } \operatorname { Pr } ( i | a )
+     =- \sum _{ i = 1 } ^ { J } p_ { i } \log _{ 2 } p_ { i } - \sum _{ a } p ( a ) \sum_ { i = 1 } ^ { J } - \operatorname { Pr } ( i | a ) \log _ { 2 } \operatorname { Pr } ( i | a )
      $$
 
 2. Gini impurity
 
-   *  A measure of impurity, lower $\to$ better
+   * A measure of impurity, lower $\to$ better
 
-   * Used by *CART* (classification and regression tree) for **classification** 
+   * Used by *CART* (classification and regression tree) for **classification**
 
    * Calculation
      $$
-     \mathrm { I } _ { G } ( p )= 1 - \sum _ { i = 1 } ^ { J } p _ { i } ^ { 2 }
+     \mathrm { I } _{ G } ( p )= 1 - \sum_ { i = 1 } ^ { J } p _ { i } ^ { 2 }
      $$
 
 3. Variance reduction
 
-   * Used by *CART* (classification and regression tree) for **regression** 
-
-
+   * Used by *CART* (classification and regression tree) for **regression**
 
 ## 3 Overfitting
 
@@ -92,6 +90,4 @@ How to avoid?
   * Reduced-Error Pruning
     1. Create a tree that classifies **training set**
     2. Evaluate impact on *validation set* of purning each possible node
-    3. Greedily remove the impact most slightly 
-
-  
+    3. Greedily remove the impact most slightly

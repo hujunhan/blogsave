@@ -23,7 +23,7 @@ First of all, we need to understand human brain. And we can make the machine lea
 
 > “The problem of searching through a predefined space of potential hypotheses for the hypothesis that best fits the training examples.”
 >
-> ​							— Tom Michell
+> ​       — Tom Michell
 
 Human learning: acquiring general concepts from past experiences.
 
@@ -33,12 +33,12 @@ Notaion:
 
 * target concept $c$
 * object $X$
-* all hypothesis set $H$ 
-* $c : X \to \{ 0,1 \}$ 
+* all hypothesis set $H$
+* $c : X \to \{ 0,1 \}$
 
-**\******What we should do is to find a hypothesis** $h ( x ) = c ( x ) \text { for all } x \text { in } X$ 
+**\******What we should do is to find a hypothesis** $h ( x ) = c ( x ) \text { for all } x \text { in } X$
 
-> Good hypothesis fit **large set** of training example well 
+> Good hypothesis fit **large set** of training example well
 >
 > $\to$ the hypothesis fit **unobserved** example well
 
@@ -50,14 +50,14 @@ Notaion:
 2. $< ? , ? , ? , ? >$ :**accepts all**
 3. $< \text { true, false, } ? , ? >$ :**accepts some**
 
-Total number of the possible hypothesis $N=(3*3*3*3)+1=82$ 
+Total number of the possible hypothesis $N=(3*3*3*3)+1=82$
 
 ### 3.2 Specific to General
 
-1. Start with the most specific hypothesis $\mathbf { h } \leftarrow < \boldsymbol { \varnothing } , \boldsymbol { \varnothing } , \boldsymbol { \varnothing } , \boldsymbol { \varnothing } >$ 
+1. Start with the most specific hypothesis $\mathbf { h } \leftarrow < \boldsymbol { \varnothing } , \boldsymbol { \varnothing } , \boldsymbol { \varnothing } , \boldsymbol { \varnothing } >$
 2. Pick up a sample
    1. if sample is **negative** $\to​$ unchanged
-   2. if sample is **positive** $\to$ update current hypothesis 
+   2. if sample is **positive** $\to$ update current hypothesis
       * $<true,true,false,true> \and <true,true,false,false> \to <true,true,false,?>$
 3. repetition of Step 2
 
@@ -80,8 +80,8 @@ Maintain 2 hypothesis
 
 Pick up a sample
 
-* if sample is **negative** $\to$ specificalize $G_0$ 
-* if sample is **positive**  $\to$  generalize $S_0$ 
+* if sample is **negative** $\to$ specificalize $G_0$
+* if sample is **positive**  $\to$  generalize $S_0$
 
 ### 4.3 Limitations
 
@@ -91,7 +91,7 @@ Low fault tolerance
 
 Stronger the bias is, more powerful the generaliztion is.
 
-indicate that: If there is no assumption, the learner can learn **nothing** but the **data** 
+indicate that: If there is no assumption, the learner can learn **nothing** but the **data**
 
 Common biases:
 

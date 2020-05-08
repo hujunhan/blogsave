@@ -56,11 +56,11 @@ $$
 
 Used to confirm the valid hypothesis using  posterior probabilities
 $$
-\begin{aligned} \theta _ { M A P } & = \operatorname { argmax } _ { \theta } P \left( \theta _ { i } | X \right) \\ & = \operatorname { argmax } _ { \theta } \left( \frac { P ( X | \theta _ { i } ) P \left( \theta _ { i } \right) } { P ( X ) } \right) \end{aligned}
+\begin{aligned} \theta _{ M A P } & = \operatorname { argmax }_ { \theta } P \left( \theta _{ i } | X \right) \\ & = \operatorname { argmax }_ { \theta } \left( \frac { P ( X | \theta _{ i } ) P \left( \theta_ { i } \right) } { P ( X ) } \right) \end{aligned}
 $$
 $P(x)$ is independent of $\theta$ . Therefore, we can simplify the $\theta_{MAP} $ to
 $$
-\theta _ { M A P } = \operatorname { argmax } _ { \theta } \left( P ( X | \theta _ { i } ) P \left( \theta _ { i } \right) \right)
+\theta_ { M A P } = \operatorname { argmax } _{ \theta } \left( P ( X | \theta_ { i } ) P \left( \theta _ { i } \right) \right)
 $$
 
 ### 2.3 How to Achieve the Goal
@@ -103,7 +103,7 @@ $$
 $$
 and consider it as a **new** *Beta prior distribution*
 $$
-P ( \theta | N , k ) = \frac { \theta ^ { \alpha _ { n e w } - 1 } ( 1 - \theta ) ^ { \beta _ { n e w } - 1 } } { B \left( \alpha _ { n e w } , \beta _ { n e w } \right) }
+P ( \theta | N , k ) = \frac { \theta ^ { \alpha _{ n e w } - 1 } ( 1 - \theta ) ^ { \beta_ { n e w } - 1 } } { B \left( \alpha _{ n e w } , \beta_ { n e w } \right) }
 $$
 
 ## 3 Bayes Optimal Classifier
@@ -112,27 +112,27 @@ Given new **instance** $x$, the hypothesis we get previously $h _ { M A P } ( x 
 
 > e.g.1
 > $$
-> P \left( h _ { 1 } | D \right) = 0.4 , P \left( h _ { 2 } | D >\right) = 0.3 , P \left( h _ { 3 } | D \right) = 0.3
+> P \left( h _{ 1 } | D \right) = 0.4 , P \left( h_ { 2 } | D >\right) = 0.3 , P \left( h _ { 3 } | D \right) = 0.3
 > $$
 > New instance
 >
 >$$
->h _ { 1 } ( x ) = + , h _ { 2 } ( x ) = - , h _ { 3 } ( x ) = -
+>h _{ 1 } ( x ) = + , h_ { 2 } ( x ) = - , h _ { 3 } ( x ) = -
 >$$
 
 Bayes optimal classifier tell us that we should find:
 $$
-\arg \max _ { v _ { j } \in V } \sum _ { h _ { i } \in H } P \left( v _ { j } | h _ { i } \right) P \left( h _ { i } | D \right)
+\arg \max _{ v_ { j } \in V } \sum _{ h_ { i } \in H } P \left( v _{ j } | h_ { i } \right) P \left( h _ { i } | D \right)
 $$
 
 > e.g.1
 >
 > $$
-> P \left( h _ { 1 } | D \right)  = 0.4 , P ( - | h _ { 1 } ) = 0 , >P ( + | h _ { 1 } ) = 1 \\ P \left( h _ { 2 } | D \right) =  0.3 , >P ( - | h _ { 2 } ) = 1 , P ( + | h _ { 2 } ) = 0 \\ P \left( h _ { >3 } | D \right) =  0.3 , P ( - | h _ { 3 } ) = 1 , P ( + | h _ { 3 >} ) = 0
+> P \left( h _{ 1 } | D \right)  = 0.4 , P ( - | h_ { 1 } ) = 0 , >P ( + | h _{ 1 } ) = 1 \\ P \left( h_ { 2 } | D \right) =  0.3 , >P ( - | h _{ 2 } ) = 1 , P ( + | h_ { 2 } ) = 0 \\ P \left( h _{ >3 } | D \right) =  0.3 , P ( - | h_ { 3 } ) = 1 , P ( + | h _{ 3 >} ) = 0
 > $$
 > therefore
 > $$
-> \begin{aligned} \sum _ { h _ { i } \in H } P ( + | h _ { i } ) P >\left( h _ { i } | D \right) & = .4 \\ \sum _ { h _ { i } \in H } P >( - | h _ { i } ) P \left( h _ { i } | D \right) & = .6 >\end{aligned}
+> \begin{aligned} \sum_ { h _{ i } \in H } P ( + | h_ { i } ) P >\left( h _{ i } | D \right) & = .4 \\ \sum_ { h _{ i } \in H } P >( - | h_ { i } ) P \left( h _ { i } | D \right) & = .6 >\end{aligned}
 > $$
 > so we choose $-$ as the classification
 
@@ -146,15 +146,15 @@ When to use:
 
 Navie Bayes assumption：
 $$
-P \left( a _ { 1 } , a _ { 2 } \ldots a _ { n } | v _ { j } \right) = \prod _ { i } P \left( a _ { i } | v _ { j } \right)
+P \left( a _{ 1 } , a_ { 2 } \ldots a _{ n } | v_ { j } \right) = \prod _{ i } P \left( a_ { i } | v _{ j } \right)
 $$
 Bayes MAP
 $$
-\begin{aligned} v _ { M A P } & = \underset { v _ { j } \in V } { \operatorname { argmax } } \frac { P \left( a _ { 1 } , a _ { 2 } \ldots a _ { n } | v _ { j } \right) P \left( v _ { j } \right) } { P \left( a _ { 1 } , a _ { 2 } \ldots a _ { n } \right) } \\ & = \underset { v _ { j } \in V } { \operatorname { argmax } } P \left( a _ { 1 } , a _ { 2 } \ldots a _ { n } | v _ { j } \right) P \left( v _ { j } \right) \end{aligned}
+\begin{aligned} v_ { M A P } & = \underset { v _{ j } \in V } { \operatorname { argmax } } \frac { P \left( a_ { 1 } , a _{ 2 } \ldots a_ { n } | v _{ j } \right) P \left( v_ { j } \right) } { P \left( a _{ 1 } , a_ { 2 } \ldots a _{ n } \right) } \\ & = \underset { v_ { j } \in V } { \operatorname { argmax } } P \left( a _{ 1 } , a_ { 2 } \ldots a _{ n } | v_ { j } \right) P \left( v _{ j } \right) \end{aligned}
 $$
 Navie Bayes Classifier
 $$
-v _ { N B } = \underset { v _ { j } \in V } { \operatorname { argmax } } P \left( v _ { j } \right) \prod _ { i } P \left( a _ { i } | v _ { j } \right)
+v_ { N B } = \underset { v _{ j } \in V } { \operatorname { argmax } } P \left( v_ { j } \right) \prod _{ i } P \left( a_ { i } | v _ { j } \right)
 $$
 
 ## 5 Bayesian Belief Networks
@@ -180,9 +180,9 @@ A network
 
 in general
 $$
-P \left( y _ { 1 } , \ldots , y _ { n } \right) = \prod _ { i = 1 } ^ { n } P \left( y _ { i } | \text { Parents } \left( Y _ { i } \right) \right)
+P \left( y _{ 1 } , \ldots , y_ { n } \right) = \prod _{ i = 1 } ^ { n } P \left( y_ { i } | \text { Parents } \left( Y _{ i } \right) \right)
 $$
-So, joint distribution is fully defined by **graph**, and $P \left( y _ { i } | \text { Parents } \left( Y _ { i } \right) \right)$
+So, joint distribution is fully defined by **graph**, and $P \left( y_ { i } | \text { Parents } \left( Y _ { i } \right) \right)$
 
 ---
 
@@ -212,10 +212,10 @@ When to use? Data is only **partially** observable
 
 Given:
 
-* Observed data $X = \left\{ x _ { 1 } , \ldots , x _ { m } \right\}$
-* Unobserved data $Z = \left\{ z _ { 1 } , \ldots , z _ { m } \right\}$
+* Observed data $X = \left\{ x _{ 1 } , \ldots , x_ { m } \right\}$
+* Unobserved data $Z = \left\{ z _{ 1 } , \ldots , z_ { m } \right\}$
 * Probablity distribution $P ( Y | h )$
-  * $Y = \left\{ y _ { 1 } , \dots , y _ { m } \right\}$ where $y _ { i } = x _ { i } \cup z _ { i }$
+  * $Y = \left\{ y _{ 1 } , \dots , y_ { m } \right\}$ where $y _{ i } = x_ { i } \cup z _ { i }$
   * $h$ parameters
 
 Determin:

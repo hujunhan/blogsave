@@ -27,4 +27,3 @@ Two common approaches:
 ## 3 When to use Transfer Learning
 
 ![transfer-learning](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/transfer-learning.png)
-
