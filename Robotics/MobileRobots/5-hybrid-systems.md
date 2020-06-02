@@ -22,6 +22,8 @@ What we are should deal with while switching?
 * Compositionality
 * Traps
 
+<!-- more -->
+
 ## Model: Hybrid Automata
 
 This is a finite state machine.
@@ -84,7 +86,7 @@ How to deal with it?
 
 A general example: 
 
-![image-20200508015745315](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508015747.png)We should keep **sliding** aloWng the switching surface (along the line )
+![image-20200508015745315](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508015747.png)We should keep **sliding** along the switching surface (along the line )
 
 ![image-20200508021905440](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200508021906.png)
 
@@ -103,9 +105,15 @@ So
 $$
 \sigma_{2}=-\sigma_{1} \frac{L_{f_{1}} g}{L_{f_{2}} g}
 $$
+And we add some constraints
+$$
+\sigma_1+\sigma_2=1
+\\ \sigma_1>0 
+\\ \sigma_2>0
+$$
 Design
 
-![image-20200508024227963](upload/image-20200508024227963.png)
+![image-20200508024227963](https://raw.githubusercontent.com/hujunhan/cloudimage/master/img/20200602192608.png)
 
 ## All in One
 
